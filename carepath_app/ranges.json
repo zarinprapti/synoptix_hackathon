@@ -1,0 +1,154 @@
+{
+  "_note": "Illustrative ranges for a hackathon prototype. Ranges vary by lab and analyser; a real deployment needs sign-off by a chemical pathologist/haematologist.",
+  "haemoglobin": {
+    "unit": "g/L",
+    "male": [
+      130,
+      180
+    ],
+    "female": [
+      120,
+      160
+    ],
+    "pregnancy_threshold": {
+      "trimester_1": 110,
+      "trimester_2_3": 105
+    },
+    "source": "Royal Liverpool pathlabs FBC ranges (pathlabs.rlbuht.nhs.uk); pregnancy thresholds per British Society for Haematology guidance on anaemia in pregnancy (VERIFY before pitch)"
+  },
+  "wbc": {
+    "unit": "x10^9/L",
+    "all": [
+      4.0,
+      11.0
+    ],
+    "source": "Royal Liverpool pathlabs FBC ranges"
+  },
+  "neutrophils": {
+    "unit": "x10^9/L",
+    "all": [
+      1.9,
+      8.0
+    ],
+    "duffy_null": [
+      1.21,
+      5.39
+    ],
+    "source": "Standard: Royal Liverpool pathlabs. Duffy-null: Duffy null-specific ANC reference range, JAMA Netw Open 2023 (PMC10282887): 1210-5390/uL"
+  },
+  "lymphocytes": {
+    "unit": "x10^9/L",
+    "all": [
+      0.9,
+      4.5
+    ],
+    "source": "Royal Liverpool pathlabs"
+  },
+  "platelets": {
+    "unit": "x10^9/L",
+    "all": [
+      140,
+      450
+    ],
+    "source": "Royal Liverpool pathlabs"
+  },
+  "mcv": {
+    "unit": "fL",
+    "all": [
+      80,
+      100
+    ],
+    "source": "Royal Liverpool pathlabs"
+  },
+  "sodium": {
+    "unit": "mmol/L",
+    "all": [
+      133,
+      146
+    ],
+    "source": "Pathology Harmony (UK)"
+  },
+  "potassium": {
+    "unit": "mmol/L",
+    "all": [
+      3.5,
+      5.3
+    ],
+    "critical_high": 6.5,
+    "source": "Pathology Harmony (UK); critical limit per RCPath communication of critical results (VERIFY)"
+  },
+  "urea": {
+    "unit": "mmol/L",
+    "all": [
+      2.5,
+      7.8
+    ],
+    "source": "Pathology Harmony (UK)"
+  },
+  "creatinine": {
+    "unit": "umol/L",
+    "male": [
+      59,
+      104
+    ],
+    "female": [
+      45,
+      84
+    ],
+    "source": "Typical UK lab range (VERIFY with chosen lab)"
+  },
+  "egfr": {
+    "unit": "mL/min/1.73m2",
+    "equation": "CKD-EPI 2009 WITHOUT ethnicity adjustment",
+    "stages": {
+      "G1": ">=90",
+      "G2": "60-89",
+      "G3a": "45-59",
+      "G3b": "30-44",
+      "G4": "15-29",
+      "G5": "<15"
+    },
+    "not_validated": [
+      "age < 18",
+      "pregnancy"
+    ],
+    "source": "NICE NG203 (2021) via UK Kidney Association eCKD guide"
+  },
+  "hba1c": {
+    "unit": "mmol/mol",
+    "bands": {
+      "normal": "<42",
+      "increased_risk": "42-47",
+      "diabetes_range": ">=48"
+    },
+    "source": "NICE / WHO HbA1c thresholds (VERIFY wording with NHS page)"
+  },
+  "ferritin": {
+    "unit": "ug/L",
+    "male": [
+      30,
+      400
+    ],
+    "female": [
+      13,
+      150
+    ],
+    "source": "Typical UK lab range (VERIFY)"
+  },
+  "tsh": {
+    "unit": "mU/L",
+    "all": [
+      0.27,
+      4.2
+    ],
+    "source": "Typical UK lab range (VERIFY)"
+  },
+  "free_t4": {
+    "unit": "pmol/L",
+    "all": [
+      12,
+      22
+    ],
+    "source": "Typical UK lab range (VERIFY)"
+  }
+}
