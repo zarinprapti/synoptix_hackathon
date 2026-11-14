@@ -1,4 +1,4 @@
-# CarePath AI – patient chatbot (Member 3)
+# CarePath AI – patient chatbot
 
 ## Run it
 ```bash
@@ -42,7 +42,7 @@ Without it, the chatbot still works: answers come from the curated explanations.
 5. **F05:** show the redaction chips; **F03 photo:** blurry photo is refused.
 6. Click **I'm finished: delete my data** → verified deletion checklist.
 
-## Known limits (say these out loud – judges like honesty)
+## Known limits
 - Redaction is pattern-based until Presidio is wired in; OCR on photos is fragile.
 - Ranges are illustrative; items marked VERIFY in `ranges.json` need checking.
 - Streamlit keeps data in server memory per session; deletion clears it, but production would need an audited store.
